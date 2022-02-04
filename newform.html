@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="backend.php">
+        <h3>Payment Form</h3>
+        <h4>Contact Information</h4>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="username" id="name" required>
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            Male <input type="radio" name="usergender" id="gender" required> Female <input type="radio"
+                name="usergender" id="gender"> Other <input type="radio" name="usergender" id="gender">
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <textarea name="useraddress" id="address" cols="30" rows="5" required></textarea>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="usermail" id="email" required>
+        </div>
+        <div>
+            <label for="pincode">Pincode</label>
+            <input type="number" name="useroincode" id="pincode" required>
+        </div>
+
+        <h4>Payment Information</h4>
+        <div>
+            <label for="card_type">Card Type</label>
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="rupay">RuPay</option>
+                <option value="visa">Visa</option>
+                <option value="debit">Debit</option>
+                <option value="credit">Credit</option>
+            </select>
+        </div>
+        <div>
+            <label for="card_number">Card Number</label>
+            <input type="number" name="card_number" id="card_number" required>
+        </div>
+        <div>
+            <label for="expiry_date">Expiry</label>
+            <input type="date" name="expiry_date" id="expiry_date" required>
+        </div>
+        <div>
+            <label for="cvv">CVV</label>
+            <input type="password" name="cvv" id="cvv" required>
+        </div>
+        <div>
+            <input type="reset" value="Reset now">
+            <input type="submit" value="Pay Now">
+        </div>
+    </form>
+</body>
+
+</html>

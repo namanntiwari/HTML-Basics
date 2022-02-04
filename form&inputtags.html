@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Input Tags</title>
+</head>
+
+<body>
+    <h2>Form</h2>
+    <!-- action attribute is for backend where the data submitted in form will be stored -->
+    <form action="backend.php">
+        <!-- input tag can be a  text button, checkbox date datetime datetime-local email file etc -->
+        <!-- to brake b/w name and email we can use br or div tag 
+        div tag stands for divison tag and is block element-->
+        <label for="name">Name:</label>
+        <!-- for attribute means for which id, thats why foe and id should be same always -->
+        <div>
+            <input type="text" name="myname" id="name">
+        </div>
+        <hr>
+        <!--horizontal rule -->
+        <label for="email">Email:</label>
+        <div>
+            <input type="email" name="myemail" id="email">
+            <!-- name here means the name to understand or recognise the data in backend -->
+        </div>
+        <hr>
+        <label for="eligibility">Are you eligible?</label>
+        <div>
+            <input type="checkbox" name="myeligibility" id="eligibility" checked>
+            <!-- checked is use for bydefault checkedbox -->
+        </div>
+        <hr>
+        <div>
+            <label for="gender">Gender:</label>
+            Male<input type="radio" name="mygender" id="gender"> Female<input type="radio" name="mygender" id="gender">
+        </div>
+        <br>
+        <label for="myself">Write about yourself?</label>
+        <div>
+            <textarea name="myself" id="myself" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="mycar" id="car">
+                <option value="indica">Indica</option>
+                <option value="safari" selected>Safari</option>
+                <!-- selected is used for bydefault select -->
+                <option value="aulto">Aulto</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset now">
+            <input type="submit" value="Submit now">
+        </div>
+    </form>
+</body>
+
+</html>
